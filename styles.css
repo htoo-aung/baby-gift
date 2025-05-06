@@ -1,0 +1,101 @@
+body {
+    background-color: #CBC3E3; /* Lilac background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #E0D4F6; /* Lighter lilac for card */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    color: #6A5ACD; /* Deeper purple for contrast */
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.intro {
+    color: #5D4E8C;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #9370DB; /* Medium purple button */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #7B68EE;
+    transform: scale(1.05);
+}
+
+.hidden-message {
+    display: none;
+    color: #5D4E8C;
+    font-size: 1.1rem;
+    background-color: #F0E6FF;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+/* For decorative images in corners */
+.decorations {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.decorations img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .intro {
+        font-size: 1rem;
+    }
+    
+    button {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
